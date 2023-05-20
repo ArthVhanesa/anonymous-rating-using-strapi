@@ -31,6 +31,34 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "faculty"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "department": {
+      "type": "enumeration",
+      "enum": [
+        "Information technology",
+        "Computer Science",
+        "Mechanical Engineering",
+        "Chemical Engineering"
+      ],
+      "required": true
+    },
+    "designation": {
+      "type": "enumeration",
+      "enum": [
+        "Assistant Professor",
+        "Professor",
+        "Head of Department"
+      ],
+      "required": true,
+      "default": "Assistant Professor"
     }
   }
 }

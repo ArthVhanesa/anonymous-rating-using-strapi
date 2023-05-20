@@ -23,6 +23,14 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "facility"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
     }
   }
 }
